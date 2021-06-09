@@ -61,12 +61,12 @@ struct Circle: Shape {
 }
 
 struct Calculator {
-    func calculate(shapes: [Shape]) -> Double {
+    func calculateAreaOf(shapes: [Shape]) -> Double {
         return shapes.map {$0.area()}.reduce(0, +)
     }
 }
 
-print(Calculator().calculate(shapes: [Rectangle(length: 2, breadth: 2), Square(length: 2), Circle(radius: 12)]))
+print(Calculator().calculateAreaOf(shapes: [Rectangle(length: 2, breadth: 2), Square(length: 2), Circle(radius: 12)]))
 
 
 // MARK:- Question 2. Is Palindrome
