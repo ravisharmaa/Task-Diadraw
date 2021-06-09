@@ -8,15 +8,7 @@ protocol Shape {
 }
 
 
-// Tried to to this but could not achieve.
 
-//extension Array: Shape where Element: Shape {
-//    func area() -> Int {
-//        return self
-//            .map { $0.area() }
-//            .reduce(0, +)
-//    }
-//}
 
 struct Triangle: Shape {
     
